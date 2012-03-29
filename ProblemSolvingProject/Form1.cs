@@ -23,6 +23,9 @@ namespace WindowsFormsApplication1
             label12.Hide();
             textBox1.Hide();
             button2.Hide();
+
+            //this.pictureBox1.Location = new Point(0, 0);
+            
             /*Graphics graphicsObj;
             myBitmap = new Bitmap(this.ClientRectangle.Width,
                this.ClientRectangle.Height,

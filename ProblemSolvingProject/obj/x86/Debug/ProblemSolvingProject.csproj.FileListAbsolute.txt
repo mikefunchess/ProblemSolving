@@ -7,3 +7,5 @@ C:\Users\Ferguson\Documents\Visual Studio 2010\Projects\ProblemSolvingProject\Pr
 C:\Users\Ferguson\Documents\Visual Studio 2010\Projects\ProblemSolvingProject\ProblemSolvingProject\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Ferguson\Documents\Visual Studio 2010\Projects\ProblemSolvingProject\ProblemSolvingProject\obj\x86\Debug\ProblemSolvingProject.exe
 C:\Users\Ferguson\Documents\Visual Studio 2010\Projects\ProblemSolvingProject\ProblemSolvingProject\obj\x86\Debug\ProblemSolvingProject.pdb
+C:\Users\Thomas\Documents\Development\UCF\Orooji\Problem Solving\ProblemSolvingProject\obj\x86\Debug\ProblemSolvingProject.exe
+C:\Users\Thomas\Documents\Development\UCF\Orooji\Problem Solving\ProblemSolvingProject\obj\x86\Debug\ProblemSolvingProject.pdb
