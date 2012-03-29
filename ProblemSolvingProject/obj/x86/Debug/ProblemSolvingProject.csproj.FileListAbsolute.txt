@@ -1,0 +1,9 @@
+C:\Users\Ferguson\Documents\Visual Studio 2010\Projects\ProblemSolvingProject\ProblemSolvingProject\bin\Debug\ProblemSolvingProject.exe
+C:\Users\Ferguson\Documents\Visual Studio 2010\Projects\ProblemSolvingProject\ProblemSolvingProject\bin\Debug\ProblemSolvingProject.pdb
+C:\Users\Ferguson\Documents\Visual Studio 2010\Projects\ProblemSolvingProject\ProblemSolvingProject\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Ferguson\Documents\Visual Studio 2010\Projects\ProblemSolvingProject\ProblemSolvingProject\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Ferguson\Documents\Visual Studio 2010\Projects\ProblemSolvingProject\ProblemSolvingProject\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Ferguson\Documents\Visual Studio 2010\Projects\ProblemSolvingProject\ProblemSolvingProject\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Ferguson\Documents\Visual Studio 2010\Projects\ProblemSolvingProject\ProblemSolvingProject\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Ferguson\Documents\Visual Studio 2010\Projects\ProblemSolvingProject\ProblemSolvingProject\obj\x86\Debug\ProblemSolvingProject.exe
+C:\Users\Ferguson\Documents\Visual Studio 2010\Projects\ProblemSolvingProject\ProblemSolvingProject\obj\x86\Debug\ProblemSolvingProject.pdb
