@@ -11,3 +11,5 @@ C:\Users\Thomas\Documents\Development\UCF\Orooji\Problem Solving\ProblemSolvingP
 C:\Users\Thomas\Documents\Development\UCF\Orooji\Problem Solving\ProblemSolvingProject\obj\x86\Debug\ProblemSolvingProject.pdb
 C:\Users\Thomas\Documents\Development\UCF\COP 4516\Move It\ProblemSolvingProject\obj\x86\Debug\ProblemSolvingProject.exe
 C:\Users\Thomas\Documents\Development\UCF\COP 4516\Move It\ProblemSolvingProject\obj\x86\Debug\ProblemSolvingProject.pdb
+C:\Users\Ferguson\Desktop\ProblemSolvingFinal\Final\ProblemSolvingProject\obj\x86\Debug\ProblemSolvingProject.exe
+C:\Users\Ferguson\Desktop\ProblemSolvingFinal\Final\ProblemSolvingProject\obj\x86\Debug\ProblemSolvingProject.pdb
