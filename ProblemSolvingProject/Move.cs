@@ -5,7 +5,15 @@ using System.Text;
 
 namespace WindowsFormsApplication1
 {
-    class Move
+    public class Move
     {
+        public GamePiece MoveFrom { get; set; }
+        public GamePiece MoveTo { get; set; }
+
+        public Move(GamePiece MoveFrom, GamePiece MoveTo)
+        {
+            this.MoveFrom = MoveFrom;
+            this.MoveTo = MoveTo;
+        }
     }
 }
