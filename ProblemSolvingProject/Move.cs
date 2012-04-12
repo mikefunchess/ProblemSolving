@@ -10,6 +10,8 @@ namespace WindowsFormsApplication1
         public GamePiece MoveFrom { get; set; }
         public GamePiece MoveTo { get; set; }
 
+        public Move() { }
+
         public Move(GamePiece MoveFrom, GamePiece MoveTo)
         {
             this.MoveFrom = MoveFrom;

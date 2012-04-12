@@ -59,23 +59,64 @@ namespace WindowsFormsApplication1
             //MessageBox.Show(Move_enter.Text);
             string move = Move_enter.Text;
 
-            GamePiece start = new GamePiece();
-            start.Row = (move[0] - 'a');
-            start.Col = (int)Char.GetNumericValue(move[1]);
-
-            GamePiece end = new GamePiece();
-            end.Row = move[2] - 'a';
-            end.Col = (int)Char.GetNumericValue(move[3]);
-
-            Move playerMove = new Move(start, end);
-
-            if (logic.MakePlayerMove(playerMove))
+            if (move.Length >= 4 && move.Length <= 5)
             {
-                MakeMove(playerMove);
+
+                GamePiece start = new GamePiece();
+                start.Row = (move[0] - 'a');
+                start.Col = (int)Char.GetNumericValue(move[1]) - 1;
+
+                GamePiece end = new GamePiece();
+                end.Row = move[2] - 'a';
+                if (move.Length == 5)
+                {
+                    if (move[3] == '1' && move[4] == '0')
+                    {
+                        end.Col = 9;
+                    }
+                }
+                else
+                {
+                    end.Col = (int)Char.GetNumericValue(move[3]) - 1;
+                }
+
+                Move playerMove = new Move(start, end);
+
+                if (logic.MakePlayerMove(playerMove))
+                {
+                    MakeMove(playerMove);
+                    Move logicMove = logic.GetNextMove();
+                    logic.MakeComputerMove(logicMove);
+                    MakeMove(logicMove);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Move");
+                }
             }
-            else
+            else if (move.Length == 6)
             {
-                MessageBox.Show("Invalid Move");
+                GamePiece start = new GamePiece();
+                start.Row = (move[0] - 'a');
+                start.Col = 9;
+
+                GamePiece end = new GamePiece();
+                end.Row = move[3] - 'a';
+                end.Col = 9;
+
+                Move playerMove = new Move(start, end);
+
+                if (logic.MakePlayerMove(playerMove))
+                {
+                    MakeMove(playerMove);
+                    Move logicMove = logic.GetNextMove();
+                    logic.MakeComputerMove(logicMove);
+                    MakeMove(logicMove);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Move");
+                }
             }
 
             Move_enter.Text = "";
@@ -103,6 +144,8 @@ namespace WindowsFormsApplication1
             if (this.computer.IsTurn)
             {
                 Move logicMove = logic.GetNextMove();
+                logic.MakeComputerMove(logicMove);
+                MakeMove(logicMove);
             }
         }
 
@@ -112,10 +155,10 @@ namespace WindowsFormsApplication1
             GamePiece end = move.MoveTo;
 
             int i = 40 + (48 * start.Row);
-            int j = start.Col;
+            int j = start.Col + 1;
             j = j * 48;
             int k = 40 + (48 * end.Row);
-            int l = end.Col;
+            int l = end.Col + 1;
             l = l * 48;
             Point check = new Point(j, i);
 
