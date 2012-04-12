@@ -13,3 +13,10 @@ C:\Users\Thomas\Documents\Development\UCF\COP 4516\Move It\ProblemSolvingProject
 C:\Users\Thomas\Documents\Development\UCF\COP 4516\Move It\ProblemSolvingProject\obj\x86\Debug\ProblemSolvingProject.pdb
 C:\Users\Ferguson\Desktop\ProblemSolvingFinal\Final\ProblemSolvingProject\obj\x86\Debug\ProblemSolvingProject.exe
 C:\Users\Ferguson\Desktop\ProblemSolvingFinal\Final\ProblemSolvingProject\obj\x86\Debug\ProblemSolvingProject.pdb
+C:\Users\Thomas\Documents\Development\UCF\COP 4516\Move It\ProblemSolvingProject\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Thomas\Documents\Development\UCF\COP 4516\Move It\ProblemSolvingProject\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Thomas\Documents\Development\UCF\COP 4516\Move It\ProblemSolvingProject\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Thomas\Documents\Development\UCF\COP 4516\Move It\ProblemSolvingProject\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Thomas\Documents\Development\UCF\COP 4516\Move It\ProblemSolvingProject\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Thomas\Documents\Development\UCF\COP 4516\Move It\ProblemSolvingProject\bin\Debug\ProblemSolvingProject.exe
+C:\Users\Thomas\Documents\Development\UCF\COP 4516\Move It\ProblemSolvingProject\bin\Debug\ProblemSolvingProject.pdb

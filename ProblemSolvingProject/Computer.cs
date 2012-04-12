@@ -11,6 +11,11 @@ namespace WindowsFormsApplication1
         public BoardPiece BoardPiece { get; set; }
         public LinkedList<Move> Moves { get; set; }
 
+        public Computer()
+        {
+            this.Moves = new LinkedList<Move>();
+        }
+
         public Computer(bool IsTurn, BoardPiece BoardPiece)
         {
             this.IsTurn = IsTurn;

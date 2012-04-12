@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WindowsFormsApplication1
 {
-    enum BoardPiece { Invalid, Green, Red, Open };
+    public enum BoardPiece { Invalid, Green, Red, Open };
 
     class Logic
     {
@@ -21,14 +21,15 @@ namespace WindowsFormsApplication1
             { BoardPiece.Red, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open },
             { BoardPiece.Red, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open },
             { BoardPiece.Invalid, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open, BoardPiece.Open, BoardPiece.Invalid }
+        };
 
         Player Player { get; set; }
         Computer Computer { get; set; }
 
-        public Logic(BoardPiece PlayerBoardPiece, bool PlayerTurn,  BoardPiece ComputerBoardPiece, bool ComputerTurn)
+        public Logic(Player player, Computer computer)
         {
-            this.Player = new Player(PlayerTurn, PlayerBoardPiece);
-            this.Computer = new Computer(ComputerTurn, ComputerBoardPiece);
+            this.Player = player;
+            this.Computer = computer;
         }
 
         public bool MakePlayerMove(Move Move) 
@@ -56,23 +57,44 @@ namespace WindowsFormsApplication1
         {
             GamePiece MoveFrom = Move.MoveFrom;
             GamePiece MoveTo = Move.MoveTo;
-            BoardPiece MoveFromBoardPiece = GameBoard[MoveFrom.Row, MoveFrom.Col];
-            BoardPiece MoveToBoardPiece = GameBoard[MoveTo.Row, MoveTo.Col];
+            BoardPiece MoveFromBoardPiece = GameBoard[MoveFrom.Row, MoveFrom.Col - 1];
+            BoardPiece MoveToBoardPiece = GameBoard[MoveTo.Row, MoveTo.Col - 1];
 
             if (MoveFromBoardPiece == this.Player.BoardPiece && MoveToBoardPiece == BoardPiece.Open) 
             {
                 if (this.Player.BoardPiece == BoardPiece.Red)
                 {
-                    if (MoveTo.Col >= MoveFrom.Col && (MoveTo.Row >= 2 && MoveTo.Row <= 9)) 
+                    if (MoveTo.Col >= MoveFrom.Col && (MoveTo.Row >= 1 && MoveTo.Row <= 8))
                     {
-                        return true;
+                        if (MoveTo.Col == MoveFrom.Col + 1 && MoveTo.Row == MoveFrom.Row)
+                        {
+                            return true;
+                        }
+                        else if (MoveTo.Col == MoveFrom.Col)
+                        {
+                            if (MoveTo.Row == MoveFrom.Row - 1 || MoveTo.Row == MoveFrom.Row + 1)
+                            {
+                                return true;
+                            }
+                        }
                     }
                 }
                 else 
                 {
-                    if (MoveTo.Row >= MoveFrom.Row && (MoveTo.Col >= 2 && MoveTo.Col <= 9)) 
+
+                    if (MoveTo.Row >= MoveFrom.Row && (MoveTo.Col >= 2 && MoveTo.Col <= 9))
                     {
-                        return true;
+                        if (MoveTo.Row == MoveFrom.Row + 1 && MoveTo.Col == MoveFrom.Col)
+                        {
+                            return true;
+                        }
+                        else if (MoveTo.Row == MoveFrom.Row)
+                        {
+                            if (MoveTo.Col == MoveFrom.Col - 1 || MoveTo.Col == MoveFrom.Col + 1)
+                            {
+                                return true;
+                            }
+                        }
                     }
                 }
             }
@@ -131,7 +153,7 @@ namespace WindowsFormsApplication1
 
         public Move GetNextMove() 
         {
-
+            //
 
             return null;
         }
